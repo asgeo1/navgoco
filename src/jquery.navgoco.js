@@ -70,7 +70,6 @@
 		_trigger: function(sources, isLink) {
 			var self = this;
 			sources.on('click', function(event) {
-				event.stopPropagation();
 				var sub = isLink ? $(this).next() : $(this).parent().next();
 				var isAnchor = false;
 				if (isLink) {
